@@ -47,6 +47,23 @@ python examples/detect_image.py \
     --out annotated.jpg --json detections.json
 ```
 
+### Output
+
+`--json` writes the envelope below (real run, 640x480 photo, `imgsz=480`). Boxes are
+`[x1, y1, x2, y2]` pixels in the **original** image, so they can be drawn directly.
+
+```json
+{
+  "image": "street.jpg",
+  "imgsz": 480,
+  "latency_ms": 229.4,
+  "detections": [
+    {"cls_id": 0, "name": "Smoke", "conf": 0.793, "xyxy": [247, 4, 640, 293]},
+    {"cls_id": 1, "name": "Fire",  "conf": 0.531, "xyxy": [320, 201, 349, 215]}
+  ]
+}
+```
+
 ## Model interface
 
 Any checkpoint exported to this contract works; `--model` is the only coupling.
