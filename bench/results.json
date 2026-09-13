@@ -1,0 +1,35 @@
+{
+  "frame": "fire2.jpg",
+  "runs": 20,
+  "threads": 2,
+  "clahe": true,
+  "results": [
+    {
+      "model": "best_320.onnx",
+      "imgsz": 320,
+      "mean_ms": 47.0,
+      "p50_ms": 45.1,
+      "p95_ms": 51.0,
+      "fps": 21.27,
+      "detections": 2
+    },
+    {
+      "model": "best_480.onnx",
+      "imgsz": 480,
+      "mean_ms": 97.3,
+      "p50_ms": 94.5,
+      "p95_ms": 114.0,
+      "fps": 10.28,
+      "detections": 2
+    },
+    {
+      "model": "best_640.onnx",
+      "imgsz": 640,
+      "mean_ms": 166.4,
+      "p50_ms": 156.7,
+      "p95_ms": 187.6,
+      "fps": 6.01,
+      "detections": 2
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+# Detector runtime — deliberately framework-free.
+# Serving works with these three alone; no Ultralytics at inference time.
+onnxruntime>=1.16
+opencv-python-headless>=4.8
+numpy>=1.24
+
+# Only needed to run kaggle/train_firewatch.ipynb (AGPL-3.0 dependency):
+# ultralytics>=8.3

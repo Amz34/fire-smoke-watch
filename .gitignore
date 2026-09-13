@@ -1,0 +1,27 @@
+# weights and model files are never committed (see LICENSES.md)
+*.onnx
+*.pt
+*.pth
+*.tflite
+*.torchscript
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# env / secrets
+.env
+*.env
+!.env.example
+
+# scratch
+out/
+*.log
+detections.json
+
+# demo intermediates
+demo/plate.png
+demo/console_cropped.mp4
