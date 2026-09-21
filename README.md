@@ -95,3 +95,7 @@ separate product and is not part of this repository.
 
 Detection code: **Apache-2.0**. Training notebook: **AGPL-3.0** (it depends on
 Ultralytics). Full map and the reasoning: [`LICENSES.md`](LICENSES.md).
+
+---
+
+Part of [my always-on agent stack](https://github.com/Amz34) · [Awesome Agent Infrastructure](https://github.com/Amz34/awesome-agent-infrastructure) (135 live-checked building blocks).
