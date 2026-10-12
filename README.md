@@ -1,5 +1,11 @@
 # Fire & Smoke Watch — detector quickstart
 
+[![CI](https://github.com/Amz34/fire-smoke-watch/actions/workflows/ci.yml/badge.svg)](https://github.com/Amz34/fire-smoke-watch/actions/workflows/ci.yml)
+[![Detection code: Apache-2.0](https://img.shields.io/badge/detection_code-Apache--2.0-blue.svg)](LICENSES.md)
+[![Runtime: ONNX Runtime + OpenCV](https://img.shields.io/badge/runtime-ONNX_Runtime_and_OpenCV-informational.svg)](requirements.txt)
+
+![A camera frame with detection boxes marking flames and drifting smoke](assets/fire-smoke-watch-overview.jpg)
+
 Fire and smoke detection you can run on a CPU, in a browser tab or on a small
 edge box: **ONNX Runtime + OpenCV + NumPy**, no deep-learning framework in the
 serving path.
@@ -63,6 +69,15 @@ python examples/detect_image.py \
   ]
 }
 ```
+
+### Demo
+
+The 9:16 clip and the console read-out behind it, recorded on the same CPU path
+this repository ships:
+
+![Fire & Smoke Watch console showing a smoke detection with its bounding box](demo/console.png)
+
+Full clip: [`demo/firewatch_demo_9x16.mp4`](demo/firewatch_demo_9x16.mp4).
 
 ## Model interface
 
